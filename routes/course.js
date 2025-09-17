@@ -6,7 +6,7 @@ const courseRouter=Router();
 
 
 
-app.get("purchasedcourse",function(req,res){
+courseRouter.get("/purchasedcourse",function(req,res){
 
     
 })
@@ -15,11 +15,11 @@ app.get("purchasedcourse",function(req,res){
 
 
 
-app.get("/course-see",function(req,res){
+courseRouter.get("/course-see",function(req,res){
 
 })
 
 
-module.export=({
+module.exports ={
     courseRouter:courseRouter
-})
+}
