@@ -1,5 +1,13 @@
 const express = require("express");
 const app =express();
+const {useRouter}=require ("./routes/user");
+const 
+
+
+
+
+
+app.use("/user",useRouter)
 
 
 app.use(express.json())
@@ -21,6 +29,12 @@ app.post("/login",function(req,res){
     })
 
 })
+app.post("/purchase-a-couse",function(req,res){
+    ({
+        
+    })
+
+})
 
 
 app.get("purchasedcourse",function(req,res){
@@ -28,12 +42,9 @@ app.get("purchasedcourse",function(req,res){
     
 })
 
-app.post("/purchase-a-couse",function(req,res){
-    ({
-        
-    })
 
-})
+
+
 
 app.get("/course-see",function(req,res){({
 
