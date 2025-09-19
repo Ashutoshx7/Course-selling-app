@@ -6,7 +6,7 @@ mongoose.connect("")
 
 
 
-const userSchema= Schema({
+const userSchema= new Schema({
     email:{type:String,unique:true},
     password:Number,
     id:ObjectId,
@@ -16,7 +16,7 @@ const userSchema= Schema({
 });
 
 
-const adminSchema=Schema({
+const adminSchema=new Schema({
     email:{type:String,unique:true},
     password:Number,
     id:ObjectId,
@@ -27,7 +27,7 @@ const adminSchema=Schema({
 
 
 
-const courseSchema=Schema({
+const courseSchema=new Schema({
     title:String,
     discription:String,
     price:Number,
@@ -36,7 +36,7 @@ const courseSchema=Schema({
 
 })
 
-const purchaseSchema=Schema({
+const purchaseSchema=new Schema({
     userId:ObjectId,
     Date:Number,
     courseid:ObjectId,
