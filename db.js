@@ -9,7 +9,6 @@ mongoose.connect("")
 const userSchema= new Schema({
     email:{type:String,unique:true},
     password:Number,
-    id:ObjectId,
     name:String,
     lastname:String,
     
